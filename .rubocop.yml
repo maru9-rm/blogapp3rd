@@ -12,8 +12,8 @@ Bundler/OrderedGems:
 Layout/EmptyLines:
   Enabled: true
 
-Layout/TrailingEmptyLines
-  Enabled: true
+Layout/TrailingEmptyLines:
+    Enabled: true
 
 Layout/TrailingWhitespace:
   Enabled: true
