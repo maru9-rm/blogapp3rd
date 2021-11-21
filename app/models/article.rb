@@ -20,6 +20,7 @@ class Article < ApplicationRecord
   validates :title, format: { with: /\A(?!@)/ }
 
   belongs_to :user
+  has_many :comments, dependent: :destroy
 
   def display_created_at
     I18n.l(created_at, format: :default)
