@@ -30,5 +30,4 @@ class Article < ApplicationRecord
     user.display_name
   end
 
-  
 end

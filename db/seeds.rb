@@ -9,7 +9,6 @@
 george = User.create!(email: 'george@test.jp', password: 'password')
 annna = User.create!(email: 'annna@test.jp', password: 'password')
 
-
 5.times do
   george.articles.create!(
     title: Faker::Lorem.sentence(word_count: 5),
