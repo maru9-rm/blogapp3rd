@@ -22,6 +22,10 @@ $header-padding-y: 16px;
     border-radius: 100%;
   }
   
+  a {
+    color: white;
+  }
+  
   &_loginBtn {
     background-color: $base-bg-color;
     height: $avatar-size;
