@@ -3,7 +3,7 @@
 # Table name: articles
 #
 #  id         :integer          not null, primary key
-#  content    :text             not null
+#  content    :text
 #  title      :string           not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
@@ -23,6 +23,7 @@ class Article < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   has_one_attached :eyecatch
+  has_rich_text :content
 
   def display_created_at
     I18n.l(created_at, format: :default)
