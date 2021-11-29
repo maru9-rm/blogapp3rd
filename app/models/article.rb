@@ -24,19 +24,5 @@ class Article < ApplicationRecord
   has_many :likes, dependent: :destroy
   has_one_attached :eyecatch
   has_rich_text :content
-
-  def display_created_at
-    I18n.l(created_at, format: :default)
-  end
-
-  def author_name
-    user.display_name
-  end
-
-
-  def like_count
-    likes.count
-  end
-
   
 end
